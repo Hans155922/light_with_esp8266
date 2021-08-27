@@ -23,6 +23,8 @@ IPAddress softSubnet(255, 255, 255, 0);
 ESP8266WebServer server(80);
 void handleRoot() {
 String page = "<html>\r\n";
+ page +="<head><meta charset=\"utf-8\">\r\n";
+page +="<title>点灯</title>\r\n</head>\r\n";
 page += "<body>\r\n";
 page += "<font>当前状态:";
  if (digitalRead(LED)) page +="开";
@@ -37,6 +39,8 @@ server.send(200, "text/html", page);
 void ON() {
 digitalWrite(LED, HIGH);
 String page = "<html>\r\n";
+page +="<head><meta charset=\"utf-8\">\r\n";
+page +="<title>点灯</title>\r\n</head>\r\n";
 page += "<body>\r\n";
 page += "<font>当前状态:开</font></br>\r\n";
 page +="<input type=\"button\" value=\"关闭\" onclick=\"javascrtpt:window.location.href='/OFF'\" />\r\n";
@@ -47,6 +51,8 @@ server.send(200, "text/html", page);
 void OFF() {
 digitalWrite(LED, LOW);
 String page = "<html>\r\n";
+page +="<head><meta charset=\"utf-8\">\r\n";
+page +="<title>点灯</title>\r\n</head>\r\n";
 page += "<body>\r\n";
 page += "<font>当前状态:关</font>\r\n";
 page +="<input type=\"button\" value=\"打开\" onclick=\"javascrtpt:window.location.href='/ON'\" />\r\n";
