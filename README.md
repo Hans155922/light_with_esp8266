@@ -3,7 +3,7 @@ esp8266点灯</br>
 请使用arduino编译</br>
 By Hnas155922</br>
 QQ:1559220768 问题答案随便填，防机器人的qwq</br>
-QQ群：7752620268</br>
+QQ群：暂无</br>
 Twitter @hans1559220768</br>
 Bilibili 吃月球的喵酱</br>
 仅供学习使用，严禁任何商业用途</br>
